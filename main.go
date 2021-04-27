@@ -28,7 +28,7 @@ func main() {
 	loadConfig()
 	initializeTemplates()
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Fatal(http.ListenAndServe(":8000", nil))
 }
 
 func loadConfig() {
